@@ -37,13 +37,11 @@ At `./data/` you may find all tsv files for the datasets, i.e., training, valida
 To train and evaluate models an all considered metrics, you may run the following command:
 
 ```
-$ python -u start_experiments.py --model <model-name> --dataset <dataset-name>
+$ python -u start_experiments.py --config <dataset_model>
 ```
 
-where `<model-name>` and `<dataset-name>` refer to the name of the model to be run and the dataset on which to run the experiment, respectively.
+where `<dataset_model>` refers to the name of the dataset and model to consider in the current experiment.
 
-You may find all configutation files at `./config_files/<model-name>/<dataset-name>.yml`, where all hyperparameter spaces and the exploration strategies are reported.
+You may find all configutation files at `./config_files/<dataset_model>.yml`, where all hyperparameter spaces and the exploration strategies are reported.
 
-**[IMPORTANT]** for graph models with explicit message-passing, you may refer to configuration files contained in the folder pattern `./config_files/<layer-n>/<dataset-name>.yml`, where `n` is the number of explored hops. In this way, you will run all graph models with exploration at `n` hops. Conversely, models without explicit message-passing follow the usual notation as explained above.
-
-Results about calculated metrics are available in the folder `./results/<dataset-name>/performance/`. Specifically, you need to access the tsv file having the following name pattern: `rec_cutoff_<cutoff>_relthreshold_0_<datetime-experiment-end>.tsv`.
+Results about calculated metrics are available in the folder `./results/<dataset_name>/performance/`. Specifically, you need to access the tsv file having the following name pattern: `rec_cutoff_<cutoff>_relthreshold_0_<datetime-experiment-end>.tsv`.
