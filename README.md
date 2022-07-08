@@ -45,3 +45,10 @@ where `<dataset_model>` refers to the name of the dataset and model to consider 
 You may find all configutation files at `./config_files/<dataset_model>.yml`, where all hyperparameter spaces and the exploration strategies are reported.
 
 Results about calculated metrics are available in the folder `./results/<dataset_name>/performance/`. Specifically, you need to access the tsv file having the following name pattern: `rec_cutoff_<cutoff>_relthreshold_0_<datetime-experiment-end>.tsv`.
+
+### Pareto calculation
+If you want to calculate, for each metric pair (e.g., Recall vs. APLT), the configuration points which belong (or not) to the Pareto frontier, you need to use the script ```pareto.py```.
+Open the file, and modify the following lines for your convenience:
+- line 112: modify the path to the tsv file where all configurations for a specific model are reported, along with their own metric results (Elliot generates this file when the whole experimental flow is over, you may find it at ```./results/performance/```
+- lines 86-93: decide what to comment/uncomment based on the model you are taking into account
+Once the script has been run and it is over, you will end up with a csv file indicating, for each point in the objective space, its coordinates and whether it belongs to the Pareto frontier or not.
