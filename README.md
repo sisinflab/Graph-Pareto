@@ -51,4 +51,5 @@ If you want to calculate, for each metric pair (e.g., Recall vs. APLT), the conf
 Open the file, and modify the following lines for your convenience:
 - line 112: modify the path to the tsv file where all configurations for a specific model are reported, along with their own metric results (Elliot generates this file when the whole experimental flow is over, you may find it at ```./results/performance/```
 - lines 86-93: decide what to comment/uncomment based on the model you are taking into account
+
 Once the script has been run and it is over, you will end up with a csv file indicating, for each point in the objective space, its coordinates and whether it belongs to the Pareto frontier or not.
