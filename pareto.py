@@ -210,5 +210,5 @@ if __name__ == '__main__':
     #print(obj.get_distances())
     print("-- STANDARD DEVIATION, MEAN --")
     print(obj.get_statistics())
-    #obj.get_statistics_per_hyper()
+    obj.get_statistics_per_hyper()
     # obj.to_csv()
