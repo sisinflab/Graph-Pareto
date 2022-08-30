@@ -47,7 +47,7 @@ You may find all configutation files at `./config_files/<dataset_model>.yml`, wh
 Results about calculated metrics are available in the folder `./results/<dataset_name>/performance/`. Specifically, you need to access the tsv file having the following name pattern: `rec_cutoff_<cutoff>_relthreshold_0_<datetime-experiment-end>.tsv`.
 
 ### Pareto calculation
-If you want to calculate, for each metric pair (e.g., Recall vs. APLT), the configuration points which belong (or not) to the Pareto frontier, you need to use the script ```pareto.py```.
+If you want to calculate, for each metric pair (e.g., Recall vs. APLT), the configuration points which belong (or not) to the Pareto frontier, and reproduce the results illustrated in the paper, you need to use the script ```pareto.py```.
 Open the file, and modify the following lines for your convenience:
 - line 188: modify the path to the tsv file where all configurations for a specific model are reported, along with their own metric results (Elliot generates this file when the whole experimental flow is over, you may find it at ```./results/performance/```
 - lines 202-203: decide what to comment/uncomment based on the multi-objective trade-off you are considering
