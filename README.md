@@ -1,6 +1,6 @@
-# On the Role of Hyper-parameters for Graph Recommender Systems Toward the Accuracy/Bias/Fairness Trade-Off
+# Addressing the Accuracy-Bias-Fairness Trade-Off in Recommender Systems via Effective Hyper-parameter tuning: A Pareto Optimality-Based Approach
 
-This is the official implementation of the paper _On the Role of Hyper-parameters for Graph Recommender Systems Toward the Accuracy/Bias/Fairness Trade-Off_, under review as full paper at WSDM 2023.
+This is the official implementation of the paper _Addressing the Accuracy-Bias-Fairness Trade-Off in Recommender Systems via Effective Hyper-parameter tuning: A Pareto Optimality-Based Approach_, under review as full paper at WSDM 2023.
 
 This repository is heavily dependent on the framework **Elliot**, so we suggest you refer to the official GitHub [page](https://github.com/sisinflab/elliot) and [documentation](https://elliot.readthedocs.io/en/latest/).
 
