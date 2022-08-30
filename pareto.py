@@ -187,11 +187,11 @@ if __name__ == '__main__':
     # set the path name at your convenience (notice that the an actual path name will likely be much more complex than the example one displayed below!)
     path = 'results/GCN.tsv'
     model_name = 'GCN' # default model
-    if 'GCN' in path and 'Light' not in path:
+    if 'GCN' in path and 'Light' not in path and 'Ultra' not in path:
         model_name = 'GCN'
-    elif 'LightGCN' in path:
+    elif 'Light' in path:
         model_name = 'LightGCN'
-    elif 'UltraGCN' in path:
+    elif 'Ultra' in path:
         model_name = 'UltraGCN'
     else:
         raise NotImplementedError('Sorry, this graph recommender has not been implemented yet!')
